@@ -9,10 +9,6 @@ The dataset is annotated with coco format.
 
 ## Documentation
 
-### Assumptions
-1. The annotations provided are accurate. 
-2. The classes are balanced so that the model can learn and train itself on both the classes equally. 
-
 
 The file structure is: 
 ```bash
@@ -49,13 +45,21 @@ The file structure is:
   - names (class names)
 8. There are 2 yaml files which I have provided. The [data.yaml](https://github.com/bansalraghav/Object-Detection/blob/main/data.yaml) contains the configurations which I used to train the small and medium models locally whereas the [colab_data.yaml](https://github.com/bansalraghav/Object-Detection/blob/main/colab_data.yaml) contains the config I used to train the large model in google colab.
 
+### Assumptions
+1. The annotations provided are accurate. 
+2. The classes are balanced so that the model can learn and train itself on both the classes equally. 
+
 ### Metrics
 1. While training the yolov5 network, we can link our runtime to wandb.ai and it keeps a track of all the epochs. It gives us various metrics such as precision, recall, mAP and losses for both training and validation.
 2. I have attached imaged of all the metrics in the [Results](https://github.com/bansalraghav/Object-Detection/tree/main/Results) folder.
+3. In the confusion matrix we can see that there are a few false positives between the background and "person" category whereas for the "car" category it is very less. For the medium and large model, the false positive rate is less as compared to the small model.
 
 ### Other artifacts
 1. The comparison between the three yolo networks shows that the large network performs the best. But the drawback is that it takes the most time to train. 
 
+### Conclusion
+1. YOLOv5 is a SOTA model which is easy to setup and quick to train. The only drawback would be to convert our custom annotations to yolo format but that also can be done with relative ease. Using the dataset which was provided to me, I was able to generate a mAP of 0.7 for the large and medium model which is good considering the fact that the model was only trained for 10 epochs with a batch size of 8. 
 
-
-
+### Recommendations
+1. If we are to train the large model for more epochs and a large batch size, we may get slightly better results.
+2. Hyperparameter tuning can also lead to better results.
