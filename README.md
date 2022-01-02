@@ -52,7 +52,7 @@ The file structure is:
 ### Metrics
 1. While training the yolov5 network, we can link our runtime to wandb.ai and it keeps a track of all the epochs. It gives us various metrics such as precision, recall, mAP and losses for both training and validation.
 2. I have attached imaged of all the metrics in the [Results](https://github.com/bansalraghav/Object-Detection/tree/main/Results) folder.
-3. In the confusion matrix we can see that there are a few false positives between the background and "person" category whereas for the "car" category it is very less. For the medium and large model, the false positive rate is less as compared to the small model.
+3. In the confusion matrix we can see that for the medium and large model, the false positive rate is less for the "car" category as compared to the small model. For the "person" category the false positive rate is high for all three models.
 
 ### Other artifacts
 1. The comparison between the three yolo networks shows that the large network performs the best. But the drawback is that it takes the most time to train. 
