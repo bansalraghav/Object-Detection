@@ -1,0 +1,5 @@
+train: eagle_data/images/train
+val: eagle_data/images/validation
+
+nc: 2
+names: ["person","car"]

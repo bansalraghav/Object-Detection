@@ -1,0 +1,5 @@
+train: /content/gdrive/MyDrive/eagleView/eagle_data/images/train
+val: /content/gdrive/MyDrive/eagleView/eagle_data/images/validation
+
+nc: 2
+names: ["person","car"]
