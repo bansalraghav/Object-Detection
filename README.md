@@ -14,6 +14,27 @@ The dataset is annotated with coco format.
 2. The classes are balanced so that the model can learn and train itself on both the classes equally. 
 
 
+The file structure is: 
+```bash
+├── eagleView
+│   ├── eagle_data
+│       │──images
+│          │──train
+│          │──validation
+│       │──labels
+│          │──train
+│          │──validation
+│
+│   ├── yolov5 (cloned repo)
+│       ├── contains the download weights
+│   
+├── Object Detection.ipynb
+└── data.yaml
+
+```
+
+
+
 ### Approach
 1. I decided to use [YOLOv5](https://github.com/ultralytics/yolov5) since it is already trained on the coco dataset. Also it is fast and easy to setup.
 2. I converted the annotations to yolo format. Further details are present in the jupyter notebook [here](https://github.com/bansalraghav/Object-Detection/blob/main/Object%20Detection.ipynb).
