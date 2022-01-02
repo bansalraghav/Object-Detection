@@ -17,3 +17,8 @@
 ### Small model losses - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/small_model_losses.png)
 ### Medium model losses - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/medium_model_losses.png)
 ### Large model losses - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/large_model_losses.png)
+
+
+### Small model Confusion Matrix - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/confusionMatrix_small.png)
+### Medium model Confusion Matrix - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/confusionMatrix_medium.png)
+### Large model Confusion Matrix - ![](https://github.com/bansalraghav/Object-Detection/blob/main/Results/confusionMatrix_large.png)
