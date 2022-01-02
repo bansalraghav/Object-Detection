@@ -21,6 +21,12 @@ The dataset is annotated with coco format.
 4. There are three kinds of yolov5 models - small, medium and large. I used the pretrained weights provided [here](https://github.com/ultralytics/yolov5/releases) and used the dataset to finetune all the three kinds of yolov5 models. I have trained all the models for a maximum of 10 epochs.
 5. Since my gpu was not working with the required pytorch version, I used my cpu to train the small and medium model which took about 2 hrs and 4hrs respectively (https://github.com/bansalraghav/Object-Detection/blob/main/Object%20Detection.ipynb). 
 6. For the large model I used google colab to train the model on gpu which took about ~1.5 hrs. (https://github.com/bansalraghav/Object-Detection/blob/main/YOLOv5_large.ipynb)
+7. For training the yolo model, we need to define 4 details in a yaml file. These are:
+  - train images path
+  - validation images path 
+  - nc (number of classes)
+  - names (class names)
+8. There are 2 yaml files which I have provided. The [data.yaml](https://github.com/bansalraghav/Object-Detection/blob/main/data.yaml) contains the configurations which I used to train the small and medium models locally whereas the [colab_data.yaml](https://github.com/bansalraghav/Object-Detection/blob/main/colab_data.yaml) contains the config I used to train the large model in google colab.
 
 ### Metrics
 1. While training the yolov5 network, we can link our runtime to wandb.ai and it keeps a track of all the epochs. It gives us various metrics such as precision, recall, mAP and losses for both training and validation.
